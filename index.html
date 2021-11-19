@@ -45,6 +45,12 @@
                 width:35px;
                
             }
+
+            .vedio-container{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
     </style>
 </head>
 <body>
@@ -52,5 +58,22 @@
    <p>This is a paragraph</p>
    <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter circle"></a>
+
+<video width="500" height="240" controls autoplay muted>
+    <source src="./res/sample-mp4-file-small.mp4" type="video/mp4">
+    
+  Your browser does not support the video tag.
+ </video>
+ <audio controls autoplay muted>
+    <source src="./res/sample-audio.mp3" type="audio/mp3">
+   
+  Your browser does not support the audio element.
+  </audio>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <div class = "vedio-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/7q2LyY5c6MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </body>
 </html>
