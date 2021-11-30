@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .red{
+            color:black;
+            text-align: center;
+        }
+        .contact-form{
+            width:600px;
+            background-color:lightgrey;
+            padding:20px;
+            margin:0px auto;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif
+        }
+        label, input, textarea{
+            display: block; /* instead of br tag it is so cool*/
+            width:100%;
+            
+        }
+        input{
+            margin:5px 0px;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+  
+   <form  class ="contact-form"action="someserver,com/somefile/">
+    <h1 class="red">Contact us</h1> 
+    <label for="first-name">First Name</label>
+    <input type="text" id ="first-name" placeholder="first name">
+    <label for=" last-name"> Last Name</label>
+    <input type="text" id="last-name" placeholder="last Name">
+    <label for="subscribe">subscribe?</label>
+    <input type="checkbox" id ="subscribe" >
+    <label for="email">email</label>
+    <input type="email" id="email" placeholder="email">
+    <label for="question">question?</label>
+    <textarea name="" id=" question" cols="70" rows="10"> give your comments</textarea>
+    <input type="submit">
+   
+   </form>
+   
+</body>
+</html>
