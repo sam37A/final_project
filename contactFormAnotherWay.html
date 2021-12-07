@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Page Another Way</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Outfit:wght@100&family=Red+Hat+Mono:wght@300&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Karla', sans-serif;
+                font-family: 'Outfit', sans-serif;
+                font-family: 'Red Hat Mono', monospace;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            .text-area {
+                height: 200px;
+            }
+            .heading {
+                text-align: center;
+            }
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: 1px solid #ccc; /* Gray border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+                width: 500px;
+                margin: 100px auto;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                color: #959ccd;
+            }
+            .box-shadow {
+                -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+                box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            .gradient {
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e3cdce+0,7db9e8+100&1+0,0+100 */
+                background: -moz-linear-gradient(top, rgba(227,205,206,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(227,205,206,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, rgba(227,205,206,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3cdce', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+            }
+            .my-pink {
+                background-color: #E3CDCE;
+            }
+        </style>
+    </head>
+    <body class="gradient">
+        
+        <div class="container box-shadow">
+            <h1 class="heading">Contact Page Another Way</h1>
+
+            <form action="#">
+
+                <label for="fname">First Name<label>
+                <input type="text" id="fname" name="first-name" placeholder="First Name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="last-name" placeholder="Last Name...">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="1">Australia</option>
+                    <option value="2">Canada</option>
+                    <option value="3">USA</option>
+                    <option value="4">China</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea 
+                    class="text-area"
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Subject...">
+                </textarea>
+
+                <input type="submit" value="Send">
+
+            </form>
+        </div>
+
+    </body>
+</html>
